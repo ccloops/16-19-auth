@@ -7,9 +7,9 @@ process.env.PORT = 7000;
 process.env.MONGODB_URI = 'mongodb://localhost/testing';
 process.env.CAT_CLOUD_SECRET = 'secretCatWord';
 
-process.env.AWS_BUCKET = 'SECRET';
-process.env.AWS_ACCESS_KEY_ID = 'SECRET ID';
-process.env.AWS_SECRET_ACCESS_KEY = 'replace with secret access key';
+process.env.AWS_BUCKET = 'fakebucket';
+process.env.AWS_ACCESS_KEY_ID = 'fakeaccesskey';
+process.env.AWS_SECRET_ACCESS_KEY = 'evenfakeraccesskey';
 
 awsSDKMock.mock('S3', 'upload', (params, callback) => {
   if(!params.Key || !params.Bucket || !params.Body || !params.ACL)
