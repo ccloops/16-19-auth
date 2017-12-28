@@ -13,6 +13,11 @@
     "dbon": "mkdir -p ./db && mongod --dbpath ./db",
     "dboff": "killall mongod"
   },
+
+  "engines": {
+    "node": "9.3.0"
+  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ccloops/16-19-auth.git"
